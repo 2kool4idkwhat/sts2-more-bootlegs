@@ -1,0 +1,36 @@
+using BaseLib.Utils;
+using MegaCrit.Sts2.Core.Commands;
+using MegaCrit.Sts2.Core.HoverTips;
+using MegaCrit.Sts2.Core.Localization.DynamicVars;
+using MegaCrit.Sts2.Core.Models.Powers;
+using MegaCrit.Sts2.Core.Models.RelicPools;
+using MegaCrit.Sts2.Core.Rooms;
+
+namespace MoreBootlegs.MoreBootlegsCode;
+
+[Pool(typeof(EventRelicPool))]
+public class FakeAkabeko : MoreBootlegsRelic
+{
+    private const string _customIconPath = "res://MoreBootlegs/images/akabeko.png";
+    public override string PackedIconPath => _customIconPath;
+    protected override string BigIconPath => _customIconPath;
+    protected override string PackedIconOutlinePath => _customIconPath;
+
+    protected override IEnumerable<DynamicVar> CanonicalVars => [
+        new PowerVar<VigorPower>(3),
+    ];
+
+    protected override IEnumerable<IHoverTip> ExtraHoverTips => [
+        HoverTipFactory.FromPower<VigorPower>(),
+    ];
+
+    public override async Task AfterRoomEntered(AbstractRoom room)
+    {
+        if (room is CombatRoom)
+        {
+            Flash();
+            await PowerCmd.Apply<VigorPower>(Owner.Creature, DynamicVars["VigorPower"].IntValue, Owner.Creature, null);
+        }
+    }
+
+}

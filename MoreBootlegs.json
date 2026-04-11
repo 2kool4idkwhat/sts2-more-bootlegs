@@ -1,0 +1,11 @@
+{
+  "id": "MoreBootlegs",
+  "name": "More Bootlegs",
+  "author": "2kool4idkwhat",
+  "description": "Adds more bootleg relics to the Fake Merchant's pool",
+  "version": "v1.0.0",
+  "has_pck": true,
+  "has_dll": true,
+  "dependencies": ["BaseLib"],
+  "affects_gameplay": true
+}

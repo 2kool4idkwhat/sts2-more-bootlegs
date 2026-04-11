@@ -1,0 +1,25 @@
+{
+  "MOREBOOTLEGS-FAKE_BRONZE_SCALES.title": "Bronze Scales???",
+  "MOREBOOTLEGS-FAKE_BRONZE_SCALES.description": "Start each combat with [blue]{ThornsPower}[/blue] [gold]Thorns[/gold].",
+  "MOREBOOTLEGS-FAKE_BRONZE_SCALES.flavor": "More like Silver Scales.",
+
+  "MOREBOOTLEGS-FAKE_AKABEKO.title": "Akabeko???",
+  "MOREBOOTLEGS-FAKE_AKABEKO.description": "Start each combat with [blue]{VigorPower}[/blue] [gold]Vigor[/gold].",
+  "MOREBOOTLEGS-FAKE_AKABEKO.flavor": "Cows aren't red dummy.",
+
+  "MOREBOOTLEGS-FAKE_POTION_BELT.title": "Potion Belt???",
+  "MOREBOOTLEGS-FAKE_POTION_BELT.description": "Upon pickup, gain [blue]{PotionSlots}[/blue] potion {PotionSlots:plural:slot|slots}.",
+  "MOREBOOTLEGS-FAKE_POTION_BELT.flavor": "Probably the strongest relic from the More Bootlegs mod :P",
+
+  "MOREBOOTLEGS-FAKE_HORN_CLEAT.title": "Horn Cleat???",
+  "MOREBOOTLEGS-FAKE_HORN_CLEAT.description": "At the start of your [blue]2nd[/blue] turn, gain [blue]{Block}[/blue] [gold]Block[/gold].",
+  "MOREBOOTLEGS-FAKE_HORN_CLEAT.flavor": "[red]Details for this relic will be revealed in the future when I come up with some flavor text...[/red]",
+
+  "MOREBOOTLEGS-FAKE_CAPTAINS_WHEEL.title": "Captain's Wheel???",
+  "MOREBOOTLEGS-FAKE_CAPTAINS_WHEEL.description": "At the start of your [blue]3rd[/blue] turn, gain [blue]{Block}[/blue] [gold]Block[/gold].",
+  "MOREBOOTLEGS-FAKE_CAPTAINS_WHEEL.flavor": "It's Green and In Between.",
+
+  "MOREBOOTLEGS-FAKE_STONE_CALENDAR.title": "Stone Calendar???",
+  "MOREBOOTLEGS-FAKE_STONE_CALENDAR.description": "At the end of turn [blue]{DamageTurn}[/blue], deal [blue]{Damage}[/blue] damage to ALL enemies.",
+  "MOREBOOTLEGS-FAKE_STONE_CALENDAR.flavor": "[red]Details for this relic will be revealed in the future when I come up with some flavor text...[/red]"
+}
