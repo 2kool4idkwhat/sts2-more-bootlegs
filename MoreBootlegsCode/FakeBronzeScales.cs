@@ -1,12 +1,10 @@
-using BaseLib.Abstracts;
 using BaseLib.Utils;
-using MegaCrit.Sts2.Core.Commands;
-using MegaCrit.Sts2.Core.Entities.Relics;
 using MegaCrit.Sts2.Core.HoverTips;
 using MegaCrit.Sts2.Core.Localization.DynamicVars;
 using MegaCrit.Sts2.Core.Models.Powers;
 using MegaCrit.Sts2.Core.Models.RelicPools;
 using MegaCrit.Sts2.Core.Rooms;
+using MegaCrit.Sts2.Core.GameActions.Multiplayer;
 
 namespace MoreBootlegs.MoreBootlegsCode;
 
@@ -31,7 +29,7 @@ public class FakeBronzeScales : MoreBootlegsRelic
         if (room is CombatRoom)
         {
             Flash();
-            await PowerCmd.Apply<ThornsPower>(Owner.Creature, DynamicVars["ThornsPower"].IntValue, Owner.Creature, null);
+            await CommonActions.Apply<ThornsPower>(new ThrowingPlayerChoiceContext(), Owner.Creature, this);
         }
     }
 

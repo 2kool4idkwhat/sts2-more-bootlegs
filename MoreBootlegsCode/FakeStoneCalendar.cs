@@ -71,7 +71,7 @@ public class FakeStoneCalendar : MoreBootlegsRelic
         new DynamicVar("DamageTurn", 7)
     ];
 
-    public override Task AfterSideTurnStart(CombatSide side, CombatState combatState)
+    public override Task AfterSideTurnStart(CombatSide side, ICombatState combatState)
     {
         if (side != Owner.Creature.Side)
         {
