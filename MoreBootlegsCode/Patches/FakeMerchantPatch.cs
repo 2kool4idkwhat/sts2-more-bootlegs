@@ -30,7 +30,6 @@ public static class FakeMerchantPatch
 
             ModelDb.Relic<FakeHornCleat>(),
             ModelDb.Relic<FakeCaptainsWheel>(),
-            ModelDb.Relic<FakeStoneCalendar>(),
 
             ModelDb.Relic<FakePotionBelt>(),
         };

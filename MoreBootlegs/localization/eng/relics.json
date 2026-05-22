@@ -17,9 +17,5 @@
 
   "MOREBOOTLEGS-FAKE_CAPTAINS_WHEEL.title": "Captain's Wheel???",
   "MOREBOOTLEGS-FAKE_CAPTAINS_WHEEL.description": "At the start of your [blue]3rd[/blue] turn, gain [blue]{Block}[/blue] [gold]Block[/gold].",
-  "MOREBOOTLEGS-FAKE_CAPTAINS_WHEEL.flavor": "It's Green and In Between.",
-
-  "MOREBOOTLEGS-FAKE_STONE_CALENDAR.title": "Stone Calendar???",
-  "MOREBOOTLEGS-FAKE_STONE_CALENDAR.description": "At the end of turn [blue]{DamageTurn}[/blue], deal [blue]{Damage}[/blue] damage to ALL enemies.",
-  "MOREBOOTLEGS-FAKE_STONE_CALENDAR.flavor": "[red]Details for this relic will be revealed in the future when I come up with some flavor text...[/red]"
+  "MOREBOOTLEGS-FAKE_CAPTAINS_WHEEL.flavor": "It's Green and In Between."
 }

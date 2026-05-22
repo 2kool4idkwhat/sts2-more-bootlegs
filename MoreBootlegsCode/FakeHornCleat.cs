@@ -26,8 +26,8 @@ public class FakeHornCleat : MoreBootlegsRelic
 
     public override async Task AfterBlockCleared(Creature creature)
     {
-        ArgumentNullException.ThrowIfNull(creature.CombatState);
-        if (creature.CombatState.RoundNumber == 2 && creature == Owner.Creature)
+        ArgumentNullException.ThrowIfNull(Owner.PlayerCombatState);
+        if (creature == Owner.Creature && Owner.PlayerCombatState.TurnNumber == 2)
         {
             Flash();
             await CreatureCmd.GainBlock(Owner.Creature, DynamicVars.Block, null);
