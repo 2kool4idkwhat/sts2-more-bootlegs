@@ -1,0 +1,12 @@
+﻿{
+  "title": "More Bootlegs",
+  "description": "Adds more bootleg relics to the Fake Merchant's pool.",
+  "visibility": "private",
+  "changeNote": "None",
+  "tags": [
+    "QoL"
+  ],
+  "dependencies": [
+    3737335127
+  ]
+}

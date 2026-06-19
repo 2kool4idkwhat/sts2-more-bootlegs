@@ -13,3 +13,4 @@ Directory.Build.props
 
 export
 .direnv/
+mod-uploader.log

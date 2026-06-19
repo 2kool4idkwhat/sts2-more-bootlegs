@@ -1,7 +1,7 @@
 // fake merchant relic pool is hardcoded, so we need to patch it with harmony
 
-using HarmonyLib;
 using System.Reflection;
+using HarmonyLib;
 using MegaCrit.Sts2.Core.Models;
 using MegaCrit.Sts2.Core.Models.Events;
 
@@ -27,16 +27,12 @@ public static class FakeMerchantPatch
         {
             ModelDb.Relic<FakeBronzeScales>(),
             ModelDb.Relic<FakeAkabeko>(),
-
             ModelDb.Relic<FakeHornCleat>(),
             ModelDb.Relic<FakeCaptainsWheel>(),
-
             ModelDb.Relic<FakePotionBelt>(),
         };
 
-        var combined = existing
-            .Concat(additions)
-            .ToArray();
+        var combined = existing.Concat(additions).ToArray();
 
         field.SetValue(null, combined);
     }

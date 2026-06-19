@@ -1,5 +1,5 @@
 build:
-    dotnet build
+    DOTNET_ROLL_FORWARD=LatestMajor dotnet build
 
 fmt:
-    dotnet format
+    csharpier format .

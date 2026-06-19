@@ -15,9 +15,7 @@ public class FakePotionBelt : MoreBootlegsRelic
 
     public override bool HasUponPickupEffect => true;
 
-    protected override IEnumerable<DynamicVar> CanonicalVars => [
-        new DynamicVar("PotionSlots", 1),
-    ];
+    protected override IEnumerable<DynamicVar> CanonicalVars => [new DynamicVar("PotionSlots", 1)];
 
     public override async Task AfterObtained()
     {
